@@ -1,4 +1,3 @@
-'use client';
 import TecGrid from "@/app/components/tecgrid";
 import AbilityTags from "@/app/components/abilityTags";
 

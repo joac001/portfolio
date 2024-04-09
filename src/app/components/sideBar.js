@@ -1,4 +1,3 @@
-'use client';
 import NavBar from "@/app/components/navBar";
 import Image from "next/image";
 
