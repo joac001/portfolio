@@ -1,3 +1,4 @@
+'use client';
 export default function AbilityTags() {
     const tools = ["TDD", "SOLID", "Scrum", "GIT", "Patrones de diseño", "POO"];
     const so = ["Ubuntu 19.20+", "Windows 7, 10, 11", "Kali 2021+"];
