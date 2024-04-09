@@ -1,7 +1,13 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-    output: 'export',
-    basePath: '/nombre-de-tu-repositorio',
+    output: "export",
+    images: {
+        loader: 'akamai',
+        path: '',
+    },
+    assetPrefix: './',
 };
 
 export default nextConfig;
