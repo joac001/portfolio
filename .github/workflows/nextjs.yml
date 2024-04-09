@@ -74,26 +74,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
-        run: |
-          ${{ steps.detect-package-manager.outputs.runner }} next build
-          echo "Build completed"
-
-      # New step to cache node_modules
-      - name: Cache node modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-      - name: Cache Next.js build
-        uses: actions/cache@v2
-        with:
-          path: .next/cache
-          key: ${{ runner.os }}-next-${{ hashFiles('**/next.config.js') }}
-          restore-keys: |
-            ${{ runner.os }}-next-
-
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
