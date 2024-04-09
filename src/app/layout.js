@@ -1,10 +1,7 @@
-// import {Montserrat} from "next/font/google";
 import "@/ui/globals.css";
 import SideBar from "@/app/components/sideBar";
 import Image from "next/image";
 import Link from "next/link";
-
-// const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
