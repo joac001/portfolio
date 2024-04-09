@@ -1,10 +1,10 @@
-import {Montserrat} from "next/font/google";
+// import {Montserrat} from "next/font/google";
 import "@/ui/globals.css";
 import SideBar from "@/app/components/sideBar";
 import Image from "next/image";
 import Link from "next/link";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+// const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} text-white bg-[#000000]`}>
+      <body className={`text-white bg-[#000000]`}>
       <div className="grid grid-cols-[30%,70%] grid-rows-[100%] h-[95vh]">
           <SideBar/>
 
