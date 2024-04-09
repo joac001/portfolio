@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import {Montserrat} from "next/font/google";
+import "@/ui/globals.css";
+import SideBar from "@/app/components/sideBar";
+import Image from "next/image";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +14,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.className} text-white bg-[#000000]`}>
+      <div className="grid grid-cols-[30%,70%] grid-rows-[100%] h-[95vh]">
+          <SideBar/>
+
+          <main className="self-end flex justify-center h-[90vh]">
+              {children}
+          </main>
+
+      </div>
+      <footer className="flex justify-center items-center align-middle bg-emerald-950 h-full">
+          <span className="text-white mr-5">
+            <Link target="_blank" href="https://github.com/joac001?tab=repositories" className="flex items-center" rel="noopener noreferrer">
+                <Image src="/gh-icon.png" alt="https://github.com/joac001?tab=repositories" width={50} height={50} />
+                <p>joac001</p>
+            </Link>
+          </span>
+
+          <span className="text-white mr-5">
+            <Link target="_blank" href="https://www.linkedin.com/in/joaquin-ord" className="flex items-center"
+                  rel="noopener noreferrer">
+                <Image src="/linkedIn-icon.png" alt="https://www.linkedin.com/in/joaquin-ord" width={50} height={50}/>
+                <p>joaquín Ordóñez</p>
+            </Link>
+          </span>
+      </footer>
+      </body>
     </html>
   );
 }
