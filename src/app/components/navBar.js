@@ -37,19 +37,19 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="flex flex-row justify-between items-center h-[5vh] bg-[#000000] m-4">
+        <nav className="fixed flex flex-row justify-between items-center h-[5vh] bg-[#000000] p-4 pt-5">
             <div className="flex flex-row justify-between items-center">
                 <Link href={pages.Inicio.url} onClick={()=> handleClick(pages.Inicio.idx)}>
                     <span className={`flex justify-center items-center text-black font-bold ml-2 rounded-full bg-white w-10 h-10`}>JO</span>
                 </Link>
                 <Link href={pages.Inicio.url} onClick={()=> handleClick(pages.Inicio.idx)}>
-                    <span className={`ml-14 transition-all ease-out ${page === pages.Inicio.idx ? 'border-2 rounded-xl p-1' : ''}`}>Inicio</span>
+                    <span className={`ml-14 max-[900px]:ml-8 transition-all ease-out ${page === pages.Inicio.idx ? 'border-2 rounded-xl p-1' : ''}`}>Inicio</span>
                 </Link>
                 <Link href={pages.Chat.url} onClick={()=> handleClick(pages.Chat.idx)}>
-                    <span className={`ml-14 transition-all ease-in-out ${page === pages.Chat.idx ? 'border-2 rounded-xl p-1' : ''}`}>Chat</span>
+                    <span className={`ml-14 max-[900px]:ml-8 transition-all ease-in-out ${page === pages.Chat.idx ? 'border-2 rounded-xl p-1' : ''}`}>Chat</span>
                 </Link>
                 <Link href={pages.Experiencias.url} onClick={()=> handleClick(pages.Experiencias.idx)}>
-                    <span className={`ml-14 transition-all ease-in-out ${page === pages.Experiencias.idx ? 'border-2 rounded-xl p-1' : ''}`}>Experiencias</span>
+                    <span className={`ml-14 max-[900px]:ml-8 transition-all ease-in-out ${page === pages.Experiencias.idx ? 'border-2 rounded-xl p-1' : ''}`}>Experiencias</span>
                 </Link>
             </div>
         </nav>

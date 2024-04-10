@@ -16,7 +16,7 @@ export default function TecGrid(){
 
     return (
         <section className="m-5">
-            <h1 className="font-bold mb-4">TECNOLOGIAS</h1>
+            <h1 className="font-bold mb-4" id="title">TECNOLOGIAS</h1>
             <div className="grid grid-cols-8 gap-4">
                 {
                     tecnologies.map((tech, index) => (

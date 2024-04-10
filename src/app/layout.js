@@ -1,7 +1,6 @@
 import "@/ui/globals.css";
 import SideBar from "@/app/components/sideBar";
-import Image from "next/image";
-import Link from "next/link";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,33 +10,41 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <body className={`text-white bg-[#000000]`}>
-        <ink rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></ink>
-        <div className="grid grid-cols-[30%,70%] grid-rows-[100%] h-[95vh]">
-            <SideBar/>
+    <body className={`
+        text-white bg-[#000000]
+    `}>
+    <div className="
+        grid grid-cols-[30%,70%] grid-rows-[100%]
+        max-[900px]:flex
+        max-[900px]:flex-col
+    ">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></link>
 
-            <main className="self-end flex justify-center h-[90vh]">
-                {children}
-            </main>
+        <SideBar/>
 
-        </div>
-        <footer className="flex justify-center items-center align-middle bg-emerald-950 h-full">
-              <span className="text-white mr-5">
-                <Link target="_blank" href="https://github.com/joac001?tab=repositories" className="flex items-center"
-                      rel="noopener noreferrer">
-                    <Image src="/gh-icon.png" alt="https://github.com/joac001?tab=repositories" width={50} height={50}/>
-                    <p>joac001</p>
-                </Link>
-              </span>
+        <main className="self-end flex justify-center h-[90vh] max-[900px]:h-auto">
+            {children}
+        </main>
 
-            <span className="text-white mr-5">
-                <Link target="_blank" href="https://www.linkedin.com/in/joaquin-ord" className="flex items-center"
-                      rel="noopener noreferrer">
-                    <Image src="/linkedIn-icon.png" alt="https://www.linkedin.com/in/joaquin-ord" width={50} height={50}/>
-                    <p>joaquín Ordóñez</p>
-                </Link>
-              </span>
-        </footer>
+        {/*<footer className="flex justify-center items-center align-middle bg-emerald-950 w-full h-full">*/}
+        {/*      <span className="text-white mr-5">*/}
+        {/*        <Link target="_blank" href="https://github.com/joac001?tab=repositories" className="flex items-center"*/}
+        {/*              rel="noopener noreferrer">*/}
+        {/*            <Image src="/gh-icon.png" alt="https://github.com/joac001?tab=repositories" width={50} height={50}/>*/}
+        {/*            <p>joac001</p>*/}
+        {/*        </Link>*/}
+        {/*      </span>*/}
+
+        {/*    <span className="text-white mr-5">*/}
+        {/*        <Link target="_blank" href="https://www.linkedin.com/in/joaquin-ord" className="flex items-center"*/}
+        {/*              rel="noopener noreferrer">*/}
+        {/*            <Image src="/linkedIn-icon.png" alt="https://www.linkedin.com/in/joaquin-ord" width={50} height={50}/>*/}
+        {/*            <p>joaquín Ordóñez</p>*/}
+        {/*        </Link>*/}
+        {/*      </span>*/}
+        {/*</footer>*/}
+    </div>
+        {/*<Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></Script>*/}
     </body>
     </html>
   );
