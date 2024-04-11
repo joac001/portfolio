@@ -11,17 +11,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <body className="
-        felx justify-center items-center text-white bg-[#000000]
+        felx text-white bg-[#000000]
     ">
     <div className="
-        flex justify-start items-center
-        max-[900px]:flex-col
+        flex justify-center
+        max-[1000px]:flex-col
     ">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></link>
 
         <SideBar/>
 
-        <main>
+        <main className="flex items-center max-[1000px]:justify-center">
             {children}
         </main>
 

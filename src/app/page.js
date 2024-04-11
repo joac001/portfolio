@@ -6,13 +6,15 @@ import AbilityTagsDesktop from "@/app/components/abilityTagsDesktop";
 export default function Home() {
 
     return (
-        <section className="felx flex-col">
-            <span className="max-[1300px]:hidden">
+        <section className="justify-self-center min-[1000px]:mt-10">
+
+            <span className="max-[1000px]:hidden">
                 <TecGridDesktop/>
             </span>
-            <span className="min-[1300px]:hidden">
+            <span className="min-[1001px]:hidden">
                 <TecGridMobile/>
             </span>
+
             <AbilityTagsDesktop/>
         </section>
     );

@@ -15,21 +15,19 @@ export default function TecGridDesktop(){
     }
 
     return (
-        <section className="m-5">
+        <section className="justify-self-center m-5">
             <h1 className="font-bold mb-4" id="title">TECNOLOGIAS</h1>
-            <div className="grid grid-cols-8 gap-4">
+            <div className="grid grid-cols-8 max-[1300px]:grid-cols-6 gap-4">
                 {
                     tecnologies.map((tech, index) => (
                         <div key={index} className="grid grid-rows-[auto, auto] bg-gray-700/65 h-32 w-24">
                             <h1 className="font-bold justify-self-center">{tech}</h1>
-
                             {
                                 tech !== "SmallTalk" ? <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${strToImg(tech)}/${strToImg(tech)}-original.svg`}
                                                             className="justify-self-center" alt={tech} width={80} height={80}/>
                                     : <Image src="/smalltalk-pharo.png"
                                            className="justify-self-center" alt={tech} width={80} height={80}/>
                             }
-
                             </div>
                     ))
                 }
