@@ -8,17 +8,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
+    return (
     <html lang="en">
         <body className="felx text-white bg-[#000000]">
             <div className="flex justify-center max-[1000px]:flex-col">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></link>
 
                 <NavBar/>
-                <section className="grid grid-cols-2 gap-0 max-[1300px]:grid-cols-1 max-[1300px]:grid-rows-2">
+                <section className="grid grid-cols-[50vh,150vh] gap-0 max-[1300px]:grid-cols-1 max-[1300px]:grid-rows-[50vh,150vh]">
                     <SideBar/>
-
-                    <main className="flex items-center max-[1000px]:justify-center">
+                    <main className="flex max-[1000px]:justify-center items-start">
                         {children}
                     </main>
                 </section>
