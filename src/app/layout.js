@@ -1,6 +1,6 @@
 import "@/ui/globals.css";
 import SideBar from "@/app/components/sideBar";
-import Script from "next/script";
+import NavBar from "@/app/components/navBar";
 
 export const metadata = {
   title: "Create Next App",
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
     ">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></link>
 
+        <NavBar/>
         <SideBar/>
 
         <main className="flex items-center max-[1000px]:justify-center">

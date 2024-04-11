@@ -1,5 +1,4 @@
 'use client';
-import NavBar from "@/app/components/navBar";
 import {useEffect, useState} from "react";
 import Image from "next/image";
 
@@ -36,8 +35,7 @@ export default function SideBar() {
     }
 
     return (
-        <section>
-            <NavBar/>
+        <section className="mt-20">
             <section className="flex flex-col items">
                 <span className="
                 flex flex-col justify-center items-start gap-4

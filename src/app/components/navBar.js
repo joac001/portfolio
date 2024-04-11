@@ -44,7 +44,7 @@ export default function NavBar() {
     }, [handleChangeView]);
 
     return (
-        <section className="relative mb-20 max-[1000px]:justify-center">
+        <section className="relative max-[1000px]:justify-center">
                 <nav className="fixed top-0 left-0 right-0 flex flex-row justify-around items-center h-[5vh] bg-gradient-to-b from-black to-transparent p-4 pt-8 max-[1000px]:w-full">
                 <div className="flex flex-row justify-between items-center">
                     <Link href={pages.Inicio.url} onClick={() => handleChangeView(pages.Inicio.url)}>
