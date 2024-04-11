@@ -36,7 +36,7 @@ export default function TecGridMobile(){
         <section className="flex flex-col items-center">
             <h1 className="font-bold mb-4" id="title">TECNOLOGIAS</h1>
             <span className="flex justify-center items-center">
-            <button className="flex items-center bg-green-700 p-3 mr-3 shadow-lg shadow-green-950 hover:shadow-none" onClick={handlePrev}>
+            <button className="flex items-center bg-green-700 p-3 mr-3 shadow-lg shadow-green-950" onClick={handlePrev}>
                 <span className="material-symbols-outlined">
                     arrow_left_alt
                 </span>
@@ -55,7 +55,7 @@ export default function TecGridMobile(){
                     </div>
                 ))}
             </div>
-            <button className="flex items-center bg-green-700 p-3 ml-3 shadow-lg shadow-green-950 hover:shadow-none" onClick={handleNext}>
+            <button className="flex items-center bg-green-700 p-3 ml-3 shadow-lg shadow-green-950" onClick={handleNext}>
                 <span className="material-symbols-outlined">
                     arrow_right_alt
                 </span>

@@ -17,7 +17,7 @@ export default function TecGridDesktop(){
     return (
         <section className="justify-self-center m-5">
             <h1 className="font-bold mb-4" id="title">TECNOLOGIAS</h1>
-            <div className="grid grid-cols-8 max-[1300px]:grid-cols-6 gap-4">
+            <div className="grid grid-cols-8 max-[1500px]:grid-cols-6 gap-4">
                 {
                     tecnologies.map((tech, index) => (
                         <div key={index} className="grid grid-rows-[auto, auto] bg-gray-700/65 h-32 w-24">
