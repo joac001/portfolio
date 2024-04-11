@@ -1,11 +1,19 @@
-import TecGrid from "@/app/components/tecgrid";
-import AbilityTags from "@/app/components/abilityTags";
+
+import TecGridDesktop from "@/app/components/tecGridDesktop";
+import TecGridMobile from "@/app/components/tecGridMobile";
+import AbilityTagsDesktop from "@/app/components/abilityTagsDesktop";
 
 export default function Home() {
+
     return (
-        <section className="mt-10 justify-self-center">
-            <TecGrid/>
-            <AbilityTags/>
+        <section className="felx flex-col">
+            <span className="max-[1300px]:hidden">
+                <TecGridDesktop/>
+            </span>
+            <span className="min-[1300px]:hidden">
+                <TecGridMobile/>
+            </span>
+            <AbilityTagsDesktop/>
         </section>
     );
 }

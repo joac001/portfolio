@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function TecGrid(){
+export default function TecGridDesktop(){
     const tecnologies= ["Java", "C", "C++", "C#", "Python", "JavaScript", "Dart", "SmallTalk", "Flutter", "React", "NextJS", "Vercel", "CSS3", "Bootstrap", "Tailwind", "HTML5"];
 
     function strToImg(str) {

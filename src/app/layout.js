@@ -10,19 +10,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <body className={`
-        text-white bg-[#000000]
-    `}>
+    <body className="
+        felx justify-center items-center text-white bg-[#000000]
+    ">
     <div className="
-        grid grid-cols-[30%,70%] grid-rows-[100%]
-        max-[900px]:flex
+        flex justify-start items-center
         max-[900px]:flex-col
     ">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"></link>
 
         <SideBar/>
 
-        <main className="self-end flex justify-center h-[90vh] max-[900px]:h-auto">
+        <main>
             {children}
         </main>
 
