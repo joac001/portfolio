@@ -43,7 +43,6 @@ export default function RootLayout({ children }) {
         {/*      </span>*/}
         {/*</footer>*/}
     </div>
-        {/*<Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></Script>*/}
     </body>
     </html>
   );

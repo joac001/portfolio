@@ -1,7 +1,7 @@
 
 import TecGridDesktop from "@/app/components/tecGridDesktop";
 import TecGridMobile from "@/app/components/tecGridMobile";
-import AbilityTagsDesktop from "@/app/components/abilityTagsDesktop";
+import AbilityTags from "@/app/components/abilityTags";
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
                 <TecGridMobile/>
             </span>
 
-            <AbilityTagsDesktop/>
+            <AbilityTags/>
         </section>
     );
 }
