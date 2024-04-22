@@ -13,7 +13,6 @@ export default function Home() {
             </span>
             <span className="min-[1001px]:hidden">
                 <TecGridMobile/>
-                smile
             </span>
 
             <AbilityTags/>
