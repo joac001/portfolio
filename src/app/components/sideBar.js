@@ -39,7 +39,7 @@ export default function SideBar() {
             <section className="flex flex-col items">
                 <span className="
                 flex flex-col justify-center items-start gap-4
-                max-[1000px]:flex-row max-[1000px]:text-xs
+                max-[1250px]:flex-row max-[1250px]:text-xs
             ">
                     <span className="flex items-center text-xl bg-green-700 rounded-xl p-2 ml-5" onClick={() => handleCopyInfo(0)}>
                         <span className="material-symbols-outlined min-[1000px]:mr-2">

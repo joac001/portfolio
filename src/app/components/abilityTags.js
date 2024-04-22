@@ -4,7 +4,7 @@ export default function AbilityTags() {
     const lang = ["Ingles bilingüe"];
 
     return (
-        <section className="flex flex-col justify-self-center m-5 max-[1000px]:items-center">
+        <section className="flex flex-col justify-self-center m-5 max-[1250px]:items-center">
             <h1 className="font-bold mb-5">HABILIDADES</h1>
 
             <table>

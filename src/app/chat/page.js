@@ -36,9 +36,14 @@ export default function Chat() {
     }
 
     return (
-        <section className="justify-self-center grid grid-cols-[90vh] grid-rows-[40vh,25vh] mt-32 gap-10">
+        <section
+            className="flex flex-col p-5">
             {/*Bot chat section*/}
-            <section ref={chatEndRef} className="scroll-auto overflow-y-scroll flex flex-col rounded-bl-2xl rounded-tl-2xl bg-gray-950 p-3">
+            <section ref={chatEndRef}
+                     className="scroll-auto overflow-y-scroll flex flex-col p-3 w-[120vh] h-52 max-[1250px]:w-full
+                                border-2 border-gray-600 rounded-bl-2xl rounded-tl-2xl rounded-br-lg rounded-tr-lg
+                                max-[475px]:text-sm
+                     ">
                 {
                     conversation.map((bubble, index) => (
                         (bubble.slice(0,2) === "B:") ?
@@ -51,7 +56,7 @@ export default function Chat() {
             </section>
 
             {/*Options*/}
-            <section className="flex flex-col-reverse flex-wrap-reverse justify-end items-start">
+            <section className="flex flex-col-reverse flex-wrap-reverse justify-end items-start max-[475px]:text-sm">
                 {questions.map((question, index)=>
                     <QuestionOption key={index} text={question} qIndex={index} onClick={askQuestion} />
                 )}

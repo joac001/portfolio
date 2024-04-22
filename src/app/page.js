@@ -6,12 +6,12 @@ import AbilityTags from "@/app/components/abilityTags";
 export default function Home() {
 
     return (
-        <section className="min-[1000px]:mt-10">
+        <section className="min-[1250px]:mt-10">
 
-            <span className="max-[1000px]:hidden">
+            <span className="max-[1250px]:hidden">
                 <TecGridDesktop/>
             </span>
-            <span className="min-[1001px]:hidden">
+            <span className="min-[1251px]:hidden">
                 <TecGridMobile/>
             </span>
 
