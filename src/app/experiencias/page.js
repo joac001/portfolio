@@ -1,7 +1,9 @@
+import ExperienceTab from "@/app/components/eperienceTab";
+
 export default function Experiencias() {
     return (
-        <div>
-            <h1>Experiencias</h1>
-        </div>
+        <section className="flex flex-col p-5">
+            <ExperienceTab />
+        </section>
     );
 }

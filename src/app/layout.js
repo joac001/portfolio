@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
                 <NavBar/>
 
-                <div className="flex max-[1250px]:flex-col justify-around">
+                <div className="grid grid-cols-[25%,75%] max-[1250px]:grid-cols-[100%] justify-around">
 
                     <SideBar/>
                     <main className="mt-14">
