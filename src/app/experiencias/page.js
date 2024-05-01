@@ -1,4 +1,4 @@
-import ExperienceTab from "@/app/components/eperienceTab";
+import ExperienceTab from "@/app/components/experienceTab";
 
 export default function Experiencias() {
     return (
