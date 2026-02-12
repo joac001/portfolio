@@ -1,0 +1,41 @@
+[
+  {
+    "id": "argentina-programa",
+    "name": "Argentina Programa",
+    "role": "Java Programming Instructor",
+    "startDate": "2023-03",
+    "endDate": "2023-12",
+    "description": "Taught Java fundamentals, algorithms, and problem-solving techniques. Adapted technical concepts to diverse learning levels."
+  },
+  {
+    "id": "mercedes-benz",
+    "name": "Mercedes-Benz AG",
+    "role": "Security & Data Analysis Support",
+    "startDate": "2024-07",
+    "endDate": "2025-09",
+    "description": "Analyzed reports generated from security audits and compliance processes. Collaborated with international teams across Germany, India, and Spain."
+  },
+  {
+    "id": "olevium",
+    "name": "Olevium",
+    "role": "Independent Full Stack",
+    "startDate": "2025-01",
+    "description": "Conceived, designed, and built a full-stack finance platform from scratch, owning the entire product lifecycle. Built a scalable and modular system using Next.js, React, FastAPI and PostgreSQL. Designed authentication and role-based authorization and background jobs. Implemented a Docker-based development environment. Designed the backend using a modular monorepo and layered architecture to support future scalability."
+  },
+  {
+    "id": "fiuba",
+    "name": "Faculty of Engineering – UBA",
+    "role": "Developer",
+    "startDate": "2025-04",
+    "endDate": "2025-11",
+    "description": "Developed and maintained internal systems, websites, and administrative tools. Worked with PHP, React, Next.js, Python, PostgreSQL, and Docker. Contributed to the end-to-end development of internal systems and tools."
+  },
+  {
+    "id": "data-voices",
+    "name": "Data Voices",
+    "role": "Full Stack Developer",
+    "startDate": "2025-09",
+    "endDate": "2026-02",
+    "description": "Owned end-to-end delivery of product features, from requirement definition and technical design to implementation and release. Designed and shipped features in a fast weekly release cycle. Built and maintained AI-driven functionality integrated into the platform. Improved performance and reliability through refactoring and optimization. Worked across frontend and backend using React, Node.js, Nest.js. Collaborated with desktop application teams to enable cross-platform integrations."
+  }
+]
