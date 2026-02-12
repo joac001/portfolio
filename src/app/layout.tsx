@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://www.joaquinordonez.dev",
     siteName: "Joaquín Ordóñez Portfolio",
     title: "Joaquín Ordóñez | Software Developer",
     description:
