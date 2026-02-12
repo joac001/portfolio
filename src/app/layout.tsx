@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   description:
     "Personal portfolio of Joaquín Ordóñez, a software developer specializing in frontend development. Showcasing projects, skills, and experience in creating engaging user interfaces and web applications.",
-  metadataBase: new URL("https://joaquinordonez.dev"),
+  metadataBase: new URL("https://www.joaquinordonez.dev"),
   alternates: {
     canonical: "/",
   },

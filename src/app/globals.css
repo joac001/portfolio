@@ -1,120 +1,137 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-    --background: #fafafa;
+  --background: #fafafa;
 
-    --primary: #18181b;
-    --primary-contrast: #fafafa;
+  --primary: #18181b;
+  --primary-contrast: #fafafa;
 
-    --accent: #f4f4f5;
-    --accent-contrast: #18181b;
+  --accent: #f4f4f5;
+  --accent-contrast: #18181b;
 
-    --surface: #ffffff;
-    --surface-contrast: #09090b;
+  --surface: #ffffff;
+  --surface-contrast: #09090b;
 
-    --muted: #f4f4f5;
-    --muted-contrast: #71717a;
+  --muted: #f4f4f5;
+  --muted-contrast: #71717a;
 
-    --border: #e4e4e7;
+  --border: #e4e4e7;
 
-    --success: #16a34a;
-    --success-contrast: #ffffff;
+  --success: #16a34a;
+  --success-contrast: #ffffff;
 
-    --error: #dc2626;
-    --error-contrast: #ffffff;
+  --error: #dc2626;
+  --error-contrast: #ffffff;
 
-    --warning: #ca8a04;
-    --warning-contrast: #ffffff;
+  --warning: #ca8a04;
+  --warning-contrast: #ffffff;
+
+  --branch-0: #0ea5e9;
+  --branch-1: #16a34a;
+  --branch-2: #9333ea;
+  --branch-3: #ea580c;
+  --branch-4: #dc2626;
+  --branch-5: #0891b2;
+  --branch-6: #ca8a04;
+  --branch-7: #db2777;
 }
 
 .dark {
-    --background: #09090b;
+  --background: #09090b;
 
-    --primary: #fafafa;
-    --primary-contrast: #18181b;
+  --primary: #fafafa;
+  --primary-contrast: #18181b;
 
-    --accent: #27272a;
-    --accent-contrast: #fafafa;
+  --accent: #27272a;
+  --accent-contrast: #fafafa;
 
-    --surface: #18181b;
-    --surface-contrast: #fafafa;
+  --surface: #18181b;
+  --surface-contrast: #fafafa;
 
-    --muted: #27272a;
-    --muted-contrast: #a1a1aa;
+  --muted: #27272a;
+  --muted-contrast: #a1a1aa;
 
-    --border: #27272a;
+  --border: #27272a;
 
-    --success: #4ade80;
-    --success-contrast: #052e16;
+  --success: #4ade80;
+  --success-contrast: #052e16;
 
-    --error: #f87171;
-    --error-contrast: #450a0a;
+  --error: #f87171;
+  --error-contrast: #450a0a;
 
-    --warning: #facc15;
-    --warning-contrast: #422006;
+  --warning: #facc15;
+  --warning-contrast: #422006;
+
+  --branch-0: #38bdf8;
+  --branch-1: #4ade80;
+  --branch-2: #a78bfa;
+  --branch-3: #fb923c;
+  --branch-4: #f87171;
+  --branch-5: #22d3ee;
+  --branch-6: #facc15;
+  --branch-7: #f472b6;
 }
 
 @theme inline {
-    --color-background: var(--background);
+  --color-background: var(--background);
 
-    --color-primary: var(--primary);
-    --color-primary-contrast: var(--primary-contrast);
+  --color-primary: var(--primary);
+  --color-primary-contrast: var(--primary-contrast);
 
-    --color-accent: var(--accent);
-    --color-accent-contrast: var(--accent-contrast);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
 
-    --color-surface: var(--surface);
-    --color-surface-contrast: var(--surface-contrast);
+  --color-surface: var(--surface);
+  --color-surface-contrast: var(--surface-contrast);
 
-    --color-muted: var(--muted);
-    --color-muted-contrast: var(--muted-contrast);
+  --color-muted: var(--muted);
+  --color-muted-contrast: var(--muted-contrast);
 
-    --color-border: var(--border);
+  --color-border: var(--border);
 
-    --color-success: var(--success);
-    --color-success-contrast: var(--success-contrast);
+  --color-success: var(--success);
+  --color-success-contrast: var(--success-contrast);
 
-    --color-error: var(--error);
-    --color-error-contrast: var(--error-contrast);
+  --color-error: var(--error);
+  --color-error-contrast: var(--error-contrast);
 
-    --color-warning: var(--warning);
-    --color-warning-contrast: var(--warning-contrast);
+  --color-warning: var(--warning);
+  --color-warning-contrast: var(--warning-contrast);
 
-    --font-formal: var(--font-inter), sans-serif;
-    --font-futuristic: var(--font-orbitron), sans-serif;
-    --font-mono: var(--font-jetbrains-mono), monospace;
+  --font-formal: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .skip-link {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    padding: 0.5rem 1rem;
-    background: var(--primary);
-    color: var(--primary-contrast);
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: 500;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .skip-link:focus {
-    top: 1rem;
+  top: 1rem;
 }
 
 ::selection {
-    background: var(--primary);
-    color: var(--primary-contrast);
+  background: var(--primary);
+  color: var(--primary-contrast);
 }
