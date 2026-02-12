@@ -86,8 +86,9 @@ All shared components follow these rules:
 - JSON-LD Person schema in layout.tsx head
 - robots.ts and sitemap.ts in app/
 - Skip-to-content link targeting `#main-content`
-- Domain placeholder: `https://joaquinordonez.dev` (update on deploy)
-- GitHub/LinkedIn URLs in JSON-LD marked as TODO
+- Domain: `https://www.joaquinordonez.dev`
+- GitHub: `https://github.com/joac001`
+- LinkedIn: `https://www.linkedin.com/in/joaquin-ord`
 
 ## Rules
 
