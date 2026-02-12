@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://www.joaquinordonez.dev",
     siteName: "Joaquín Ordóñez Portfolio",
     title: "Joaquín Ordóñez | Software Developer",
     description:
@@ -85,10 +86,10 @@ export default function RootLayout({
               "@type": "Person",
               name: "Joaquín Ordóñez",
               jobTitle: "Software Developer",
-              url: "https://joaquinordonez.dev",
+              url: "https://www.joaquinordonez.dev",
               sameAs: [
-                "https://github.com/TODO",
-                "https://linkedin.com/in/TODO",
+                "https://github.com/joac001",
+                "https://www.linkedin.com/in/joaquin-ord",
               ],
               knowsAbout: [
                 "React",
