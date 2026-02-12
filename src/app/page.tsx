@@ -11,12 +11,12 @@ import { ExperienceTimeline } from '@/components/experience-timeline';
 export default function Home() {
   return (
     <Container id="main-content" className="flex-col gap-0">
-      <section className="flex space-y-4">
-        <div className="flex-col md:w-2/3">
-          <TypeWriter text="Software Engineer" variant="h2" style="mono" speed={60} delay={300} />
+      <section className="flex flex-col space-y-4">
+        <div className="md:w-2/3">
+          <TypeWriter text="Software Engineer" variant="h1" style="mono" speed={60} delay={300} />
           <StaggerText delay={0.3} staggerDelay={0.1}>
             <StaggerItem>
-              <Typography variant="h3" style="mono">
+              <Typography variant="h2" style="mono">
                 Joaquín Ordoñez
               </Typography>
             </StaggerItem>
@@ -29,7 +29,7 @@ export default function Home() {
               </Typography>
             </StaggerItem>
             <StaggerItem>
-              <span className="block h-2" />
+              <div className="h-2" />
             </StaggerItem>
             <StaggerItem>
               <Typography variant="body">
@@ -40,8 +40,8 @@ export default function Home() {
             </StaggerItem>
           </StaggerText>
         </div>
+        <Button magnetic>Contact me</Button>
       </section>
-      <Button magnetic>Contact me</Button>
 
       <ExperienceTimeline id="experience-timeline" />
     </Container>

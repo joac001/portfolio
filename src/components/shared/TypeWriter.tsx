@@ -57,19 +57,21 @@ export default function TypeWriter({
   }, [displayedText, text, speed, isTyping, onComplete]);
 
   return (
-    <Typography variant={variant} style={style} className={className}>
-      {displayedText}
-      {cursor && (
-        <motion.span
-          animate={{ opacity: isComplete ? [1, 0] : 1 }}
-          transition={{
-            duration: 0.5,
-            repeat: isComplete ? Infinity : 0,
-            repeatType: 'reverse',
-          }}
-          className="inline-block ml-0.5 w-0.5 h-[1em] bg-primary align-middle"
-        />
-      )}
+    <Typography variant={variant} style={style} className={className} aria-label={text}>
+      <span aria-hidden="true">
+        {displayedText}
+        {cursor && (
+          <motion.span
+            animate={{ opacity: isComplete ? [1, 0] : 1 }}
+            transition={{
+              duration: 0.5,
+              repeat: isComplete ? Infinity : 0,
+              repeatType: 'reverse',
+            }}
+            className="inline-block ml-0.5 w-0.5 h-[1em] bg-primary align-middle"
+          />
+        )}
+      </span>
     </Typography>
   );
 }

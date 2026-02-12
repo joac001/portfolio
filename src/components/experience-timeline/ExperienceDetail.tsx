@@ -1,5 +1,6 @@
 'use client';
 
+import { useId } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GitBranch } from 'lucide-react';
 import { Typography } from '@/components/shared';
@@ -11,12 +12,15 @@ interface ExperienceDetailProps {
 }
 
 export default function ExperienceDetail({ experience, color }: ExperienceDetailProps) {
+  const titleId = useId();
+
   return (
     <div className="h-full flex items-start" aria-live="polite">
       <AnimatePresence mode="wait">
         {experience ? (
           <motion.article
             key={experience.id}
+            aria-labelledby={titleId}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
@@ -26,10 +30,10 @@ export default function ExperienceDetail({ experience, color }: ExperienceDetail
             <Typography variant="caption" style="mono" className="mb-1 block">
               {experience.name}
             </Typography>
-            <Typography variant="h2" style="mono" className="mb-1">
+            <Typography variant="h3" id={titleId} style="futuristic" className="mb-1">
               {experience.role}
             </Typography>
-            <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: color }} />
+            <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: color }} aria-hidden="true" />
             <Typography variant="body" style="mono">
               {experience.description}
             </Typography>

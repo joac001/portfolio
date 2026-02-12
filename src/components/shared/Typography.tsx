@@ -9,6 +9,7 @@ interface TypographyProps {
   children: React.ReactNode;
   className?: string;
   id?: string;
+  'aria-label'?: string;
 }
 
 const variantClasses: Record<NonNullable<TypographyProps['variant']>, string> = {
@@ -34,10 +35,11 @@ export default function Typography({
   children,
   className = '',
   id,
+  'aria-label': ariaLabel,
 }: TypographyProps) {
   const Tag = as ?? defaultElementMap[variant];
   return (
-    <Tag id={id} className={`${variantClasses[variant]} ${styleClasses[style]} ${className}`}>
+    <Tag id={id} aria-label={ariaLabel} className={`${variantClasses[variant]} ${styleClasses[style]} ${className}`}>
       {children}
     </Tag>
   );
