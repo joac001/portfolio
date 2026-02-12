@@ -230,7 +230,7 @@ export default function GitTree({ layout, selectedId, onSelect }: GitTreeProps) 
             type="button"
             onClick={() => onSelect(label.subExperienceId ?? label.experienceId)}
             aria-pressed={isSelected}
-            className="absolute text-left cursor-pointer bg-transparent border-none p-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded"
+            className="absolute text-left cursor-pointer bg-transparent border-none p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg hover:bg-muted-contrast/10"
             style={{
               top: label.y - 10,
               left: label.x,
@@ -247,6 +247,9 @@ export default function GitTree({ layout, selectedId, onSelect }: GitTreeProps) 
                 ease: 'easeOut',
                 delay: hasInitialized ? 0 : (labelDelays.get(label.id) ?? PATH_BASE_DELAY),
               },
+            }}
+            whileHover={{
+              scale: 1.05,
             }}
           >
             <Typography
