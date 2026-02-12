@@ -19,6 +19,18 @@ src/
     shared/         → Reusable design system components
       index.ts      → Barrel exports (update when adding components)
       types.tsx     → Shared types (TextStyle, styleClasses)
+    experience-timeline/ → Git tree career timeline
+      types.ts      → Experience, TreeNode, TreePath, TreeLabel, TreeLayout
+      tree-layout.ts → Pure layout engine (no React, no DOM)
+      branch-colors.ts → getBranchCSSVar(index)
+      GitTree.tsx    → SVG renderer with animated paths/nodes/labels
+      ExperienceDetail.tsx → Right panel showing selected experience
+      ExperienceTimeline.tsx → Orchestrator (state, layout, selection)
+      MobileDrawer.tsx → Mobile slide-in drawer (focus trap, scroll lock)
+      index.ts       → Barrel exports
+  data/
+    experiences.json → Experience data (company, role, dates, description)
+    experiences.ts   → Typed re-export of JSON
   contexts/         → React contexts (ThemeContext)
 ```
 
@@ -45,20 +57,27 @@ All shared components follow these rules:
 
 ### Component Reference
 
-| Component   | Renders as                                       | Key props                                                                           |
-| ----------- | ------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| Typography  | h1-h6, p, span, label (auto-mapped from variant) | `variant`, `style`, `as` (override), `id`                                           |
-| Button      | motion.button                                    | `variant`, `style`, `type` (default: button), `disabled`, `aria-label`, `className` |
-| Card        | article                                          | `title` (required), `subtitle`, `actions` (Button[])                                |
-| Container   | main (default)                                   | `as` (main/section/div), `id` (required), `className`                               |
-| AppBar      | header + nav                                     | —                                                                                   |
-| ThemeToggle | button                                           | Internal component (not exported)                                                   |
+| Component      | Renders as                                       | Key props                                                                                          |
+| -------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Typography     | h1-h6, p, span, label (auto-mapped from variant) | `variant`, `style`, `as` (override), `id`, `aria-label`                                            |
+| Button         | motion.button                                    | `variant`, `style`, `type` (default: button), `disabled`, `aria-label`, `className`, `magnetic`    |
+| TypeWriter     | Typography (animated typing)                     | `text`, `variant`, `style`, `speed`, `delay`, `cursor`, `onComplete`                               |
+| StaggerText    | motion.div (stagger container)                   | `delay`, `staggerDelay`, `className`                                                               |
+| StaggerItem    | motion.div (child of StaggerText)                | `className`                                                                                        |
+| Card           | article                                          | `title` (required), `subtitle`, `actions` (Button[])                                               |
+| Container      | main (default)                                   | `as` (main/section/div), `id` (required), `className`                                              |
+| AppBar         | header + nav                                     | —                                                                                                  |
+| ThemeToggle    | button                                           | Internal component (not exported)                                                                  |
 
 ### Animations (Framer Motion)
 
-- Button: `whileHover` (scale 1.05, y -2, boxShadow glow), `whileTap` (scale 0.97)
+- Button: `whileHover` (scale 1.05, y -2, boxShadow glow), `whileTap` (scale 0.97), optional `magnetic` prop
+- TypeWriter: character-by-character typing with blinking cursor
+- StaggerText/StaggerItem: cascading fade-in + slide-up for children
+- GitTree: paths draw with `pathLength`, nodes pop with spring, labels slide in — cascading delays per branch family
 - ThemeToggle: AnimatePresence with y-axis slide (moon up, sun down)
-- Transition: `tween` type, no spring (avoids border flickering)
+- MobileDrawer: slide from right (`x: 100% → 0`) with backdrop fade
+- Transition: `tween` type, no spring (avoids border flickering) — except node circles which use spring
 - CSS: `prefers-reduced-motion` disables all animations globally
 
 ## SEO

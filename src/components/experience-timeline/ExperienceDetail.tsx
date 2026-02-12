@@ -30,7 +30,7 @@ export default function ExperienceDetail({ experience, color }: ExperienceDetail
             <Typography variant="caption" style="mono" className="mb-1 block">
               {experience.name}
             </Typography>
-            <Typography variant="h3" id={titleId} style="futuristic" className="mb-1">
+            <Typography variant="h3" id={titleId} style="mono" className="mb-1">
               {experience.role}
             </Typography>
             <div className="h-1 w-12 rounded-full mb-4" style={{ backgroundColor: color }} aria-hidden="true" />

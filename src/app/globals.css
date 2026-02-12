@@ -99,7 +99,6 @@
   --color-warning-contrast: var(--warning-contrast);
 
   --font-formal: var(--font-inter), sans-serif;
-  --font-futuristic: var(--font-orbitron), sans-serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
