@@ -1,7 +1,6 @@
-export type TextStyle = 'formal' | 'futuristic' | 'mono';
+export type TextStyle = 'formal' | 'mono';
 
 export const styleClasses: Record<TextStyle, string> = {
-    formal: 'font-formal',
-    futuristic: 'font-futuristic',
-    mono: 'font-mono',
+  formal: 'font-formal',
+  mono: 'font-mono',
 };

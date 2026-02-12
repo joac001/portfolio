@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   description:
     "Personal portfolio of Joaquín Ordóñez, a software developer specializing in frontend development. Showcasing projects, skills, and experience in creating engaging user interfaces and web applications.",
-  metadataBase: new URL("https://joaquinordonez.dev"),
+  metadataBase: new URL("https://www.joaquinordonez.dev"),
   alternates: {
     canonical: "/",
   },
@@ -85,10 +85,10 @@ export default function RootLayout({
               "@type": "Person",
               name: "Joaquín Ordóñez",
               jobTitle: "Software Developer",
-              url: "https://joaquinordonez.dev",
+              url: "https://www.joaquinordonez.dev",
               sameAs: [
-                "https://github.com/TODO",
-                "https://linkedin.com/in/TODO",
+                "https://github.com/joac001",
+                "https://www.linkedin.com/in/joaquin-ord",
               ],
               knowsAbout: [
                 "React",
