@@ -230,6 +230,7 @@ export default function GitTree({ layout, selectedId, onSelect }: GitTreeProps) 
             type="button"
             onClick={() => onSelect(label.subExperienceId ?? label.experienceId)}
             aria-pressed={isSelected}
+            aria-label={`Select ${label.text}`}
             className="absolute text-left cursor-pointer bg-transparent border-none p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg hover:bg-muted-contrast/10"
             style={{
               top: label.y - 10,
