@@ -5,7 +5,7 @@
     "role": "Java Programming Instructor",
     "startDate": "2023-03",
     "endDate": "2023-12",
-    "description": "Taught Java fundamentals, algorithms, and problem-solving techniques. Adapted technical concepts to diverse learning levels."
+    "description": "Taught Java programming fundamentals, algorithms, and problem-solving to students as part of the 4th edition of Argentina Programa, a national government initiative to expand access to software development education."
   },
   {
     "id": "mercedes-benz",
@@ -13,22 +13,22 @@
     "role": "Security & Data Analysis Support",
     "startDate": "2024-07",
     "endDate": "2025-09",
-    "description": "Analyzed reports generated from security audits and compliance processes. Collaborated with international teams across Germany, India, and Spain."
+    "description": "Analyzed reports from security audits and compliance processes across a global organization. Collaborated with international teams in Germany, India, and Spain, developing strong technical documentation and cross-cultural communication skills."
   },
   {
     "id": "olevium",
     "name": "Olevium",
-    "role": "Independent Full Stack",
+    "role": "Co-founder & Full Stack Developer",
     "startDate": "2025-01",
-    "description": "Conceived, designed, and built a full-stack finance platform from scratch, owning the entire product lifecycle. Built a scalable and modular system using Next.js, React, FastAPI and PostgreSQL. Designed authentication and role-based authorization and background jobs. Implemented a Docker-based development environment. Designed the backend using a modular monorepo and layered architecture to support future scalability."
+    "description": "Co-founded and led the technical development of a personal finance platform that automates expense tracking through WhatsApp bots and messaging integrations. Owned architecture, backend, frontend, and deployment. Built with Next.js, FastAPI, and PostgreSQL with role-based auth, background jobs, and a Dockerized development environment."
   },
   {
     "id": "fiuba",
     "name": "Faculty of Engineering – UBA",
-    "role": "Developer",
+    "role": "Full Stack Developer",
     "startDate": "2025-04",
     "endDate": "2025-11",
-    "description": "Developed and maintained internal systems, websites, and administrative tools. Worked with PHP, React, Next.js, Python, PostgreSQL, and Docker. Contributed to the end-to-end development of internal systems and tools."
+    "description": "Built and maintained internal systems, websites, and administrative tools for the university from the ground up. Worked across the stack with React, Next.js, Tailwind CSS, MUI, Python, PostgreSQL, and Docker."
   },
   {
     "id": "data-voices",
@@ -36,6 +36,6 @@
     "role": "Full Stack Developer",
     "startDate": "2025-09",
     "endDate": "2026-02",
-    "description": "Owned end-to-end delivery of product features, from requirement definition and technical design to implementation and release. Designed and shipped features in a fast weekly release cycle. Built and maintained AI-driven functionality integrated into the platform. Improved performance and reliability through refactoring and optimization. Worked across frontend and backend using React, Node.js, Nest.js. Collaborated with desktop application teams to enable cross-platform integrations."
+    "description": "Owned end-to-end feature delivery in fast weekly release cycles from requirement gathering and technical design to production deployment. Built and integrated AI-powered features into the platform. Improved system performance and reliability through refactoring and optimization. Worked across frontend and backend with React, Node.js, and TypeScript, collaborating with desktop application teams on cross-platform integrations."
   }
 ]

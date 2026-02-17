@@ -1,3 +1,5 @@
+'use client';
+
 import { useId } from "react";
 import Typography from "./Typography";
 import type Button from "./Button";
